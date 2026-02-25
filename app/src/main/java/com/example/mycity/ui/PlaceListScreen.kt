@@ -51,12 +51,12 @@ fun PlaceListScreen(category: String?, onPlaceClick: (String, String, Int) -> Un
             {
                 if(isPhone){
                     Row(
-                        modifier = Modifier.padding(16.dp),
+                        modifier = Modifier,
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         Image(painter = painterResource(id = place.imageRes),
                             contentDescription = null,
-                            modifier = Modifier.size(120.dp))
+                            modifier = Modifier.size(100.dp))
 
                         Spacer(modifier = Modifier.width(16.dp))
 
@@ -86,7 +86,5 @@ fun PlaceListScreen(category: String?, onPlaceClick: (String, String, Int) -> Un
 
             }
         }
-
-
         }
     }
