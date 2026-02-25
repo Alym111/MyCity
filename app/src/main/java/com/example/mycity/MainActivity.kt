@@ -119,7 +119,6 @@ fun MyCityApp(windowSizeClass: WindowSizeClass){
             ) { innerPadding ->
                 Row(modifier = Modifier.padding(innerPadding).fillMaxSize()) {
 
-                    // LEFT — Categories (1/4)
                     Column(modifier = Modifier.weight(1f)) {
                         CategoryScreen(onCategoryClick = { category ->
                             selectedCategory = category
@@ -135,7 +134,6 @@ fun MyCityApp(windowSizeClass: WindowSizeClass){
                         })
                     }
 
-                    // MIDDLE — Places (1/4)
                     Column(modifier = Modifier.weight(1f)) {
                         if (selectedCategory != null) {
                             PlaceListScreen(
@@ -153,7 +151,6 @@ fun MyCityApp(windowSizeClass: WindowSizeClass){
                         }
                     }
 
-                    // RIGHT — Detail (2/4)
                     Column(modifier = Modifier.weight(2f)) {
                         if (selectedName != null) {
                             DetailScreen(selectedName, selectedImage, selectedDescription)

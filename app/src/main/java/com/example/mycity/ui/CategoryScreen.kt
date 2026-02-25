@@ -31,11 +31,6 @@ import com.example.mycity.R
 
 @Composable
 fun CategoryScreen(onCategoryClick: (String) -> Unit){
-//    val categories = listOf(
-//        "Restaurants",
-//        "Parks",
-//        "Museums"
-//    )
     val categories = listOf(
         Category("Restaurants", R.drawable.restaurants),
         Category("Parks", R.drawable.parks),
@@ -58,8 +53,6 @@ fun CategoryScreen(onCategoryClick: (String) -> Unit){
                     Image(painter = painterResource(id = category.imageRes),
                         contentDescription = null,
                         modifier = Modifier.size(120.dp))
-
-//                    Spacer(modifier = Modifier.width(16.dp))
 
                     Text(
                         text = category.name,

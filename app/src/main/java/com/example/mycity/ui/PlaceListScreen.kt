@@ -88,12 +88,5 @@ fun PlaceListScreen(category: String?, onPlaceClick: (String, String, Int) -> Un
         }
 
 
-//        places.forEach { place ->
-//            Button(onClick = {navController.navigate("detail/${place.name}/${place.description}")}){
-//                Text(place.name)
-//                }
-//
-//            }
-//        }
         }
     }
